@@ -178,6 +178,11 @@
 </ul>
 </li>
 <li><a href="#Hexo%E4%B8%BB%E9%A1%8C-theme-%E6%9B%B4%E6%8F%9B">Hexo主題(theme)更換</a><br>  1 <a href="#Step1-%E9%96%8B%E5%95%9F%E7%B5%82%E7%AB%AF%E6%A9%9F">Step1:開啟終端機</a><br>  2 <a href="#Step2-%E6%8C%91%E9%81%B8%E4%B8%BB%E9%A1%8C-theme">Step2:挑選主題(theme)</a><br>  3 <a href="#Step3-%E5%B0%87%E4%B8%BB%E9%A1%8Cclone%E8%87%B3%E4%BD%A0%E7%9A%84hexo%E5%B0%88%E6%A1%88%E5%85%A7">Step3:將主題clone至你的hexo專案內</a><br>  4 <a href="#Step4-%E6%9B%B4%E6%94%B9config%E6%AA%94">Step4:更改config檔</a></li>
+<li><a href="#%E9%83%A8%E5%B1%AC%E5%88%B0github%E4%B8%8A">部屬到github上</a><ul>
+<li><a href="#%E5%BB%BA%E7%AB%8B-github-%E5%B0%88%E6%A1%88">建立 github 專案</a></li>
+<li><a href="#%E5%B0%87hexo%E5%B0%88%E6%A1%88%E7%99%BC%E5%B8%83%E8%87%B3github">將hexo專案發布至github</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="Hexo-是什麼"><a href="#Hexo-是什麼" class="headerlink" title="Hexo 是什麼"></a>Hexo 是什麼</h2><p>Hexo 是一個基於node.js框架基礎下產生的快速、簡單且強大的網誌框架。Hexo 使用 Markdown（或其他標記語言）解析您的文章，並在幾秒鐘內，透過漂亮的主題產生靜態網頁檔案。</p>
 <h2 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h2><h3 id="前置安裝"><a href="#前置安裝" class="headerlink" title="前置安裝"></a>前置安裝</h3><p>在開始使用 Hexo 之前，電腦必須先安裝以下工具:</p>
@@ -260,7 +265,7 @@
 <li>repo：GitHub repository 的連結，記得將 username 修改成自己的帳號名稱</li>
 <li>branch：選擇分支，預設為 master</li>
 </ul>
-<h3 id="Step3-輸入部署指令"><a href="#Step3-輸入部署指令" class="headerlink" title="Step3: 輸入部署指令"></a>Step3: 輸入部署指令</h3><p>使用下列指令即可部署檔案到網站上，第一次輸入可能會要求登入 GitHub 帳號：</p>
+<h4 id="Step3-輸入部署指令"><a href="#Step3-輸入部署指令" class="headerlink" title="Step3: 輸入部署指令"></a>Step3: 輸入部署指令</h4><p>使用下列指令即可部署檔案到網站上，第一次輸入可能會要求登入 GitHub 帳號：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>通常在完成每次修改後，會依序輸入 clean -&gt; generate -&gt; deploy 三行指令，避免更新不完全：</p>
