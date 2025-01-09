@@ -178,8 +178,7 @@
 <li><a href="#%E8%A8%AD%E5%AE%9AEslint">設定 Eslint</a></li>
 <li><a href="#%E8%A8%AD%E5%AE%9APrettier">設定 Prettier</a></li>
 <li><a href="#%E8%A8%AD%E5%AE%9AHusky">設定 Husky</a></li>
-<li><a href="#%E6%95%B4%E5%90%88Eslint%E8%88%87Prettier">整合 Eslint 與 Prettier</a></li>
-<li><a href="#%E8%87%AA%E5%8B%95%E5%8C%96%E7%A8%8B%E5%BC%8F%E7%A2%BC%E6%AA%A2%E6%9F%A5">自動化程式碼檢查</a></li>
+<li><a href="#BONUS-%E5%AD%98%E6%AA%94%E5%BE%8C%E8%87%AA%E5%8B%95%E5%9F%B7%E8%A1%8C-Prettier-%E4%BF%AE%E6%AD%A3%E6%A0%BC%E5%BC%8F">BONUS 存檔後自動執行 Prettier 修正格式</a></li>
 </ul>
 <h2 id="什麼是-Eslint"><a href="#什麼是-Eslint" class="headerlink" title="什麼是 Eslint"></a>什麼是 Eslint</h2><p>Eslint 是一個靜態程式碼分析工具，用於識別和修復 JavaScript 程式碼中的問題。它可以幫助開發者保持一致的程式碼風格，並避免常見的錯誤。</p>
 <h2 id="什麼是-Prettier"><a href="#什麼是-Prettier" class="headerlink" title="什麼是 Prettier"></a>什麼是 Prettier</h2><p>Prettier 是一個程式碼格式化工具，用於自動調整程式碼的格式，使其符合指定的風格規範。它可以與 Eslint 一起使用，以確保程式碼既正確又美觀。</p>
@@ -324,7 +323,7 @@
 <p>如果執行後再 command 端有執行動作的話就代表 Husky 有執行。</p>
 <h2 id="BONUS-存檔後自動執行-Prettier-修正格式"><a href="#BONUS-存檔後自動執行-Prettier-修正格式" class="headerlink" title="BONUS: 存檔後自動執行 Prettier 修正格式"></a>BONUS: 存檔後自動執行 Prettier 修正格式</h2><p>除了上面的 Eslint 跟 Prettier 的配置設定好之外，還要再去設定另一個配置檔，才能夠讓功能生效，請依照下圖的步驟執行:</p>
 <ol>
-<li><p><a href="../img/vs%E8%A8%AD%E5%AE%9A%E6%AA%94%E6%95%99%E5%AD%B8.png">vs 設定檔</a></p>
+<li><p>根據下圖的指示步驟操作:<br><img src="/../img/vs%E8%A8%AD%E5%AE%9A%E6%AA%94%E6%95%99%E5%AD%B8.png" alt="vs 設定檔"></p>
 </li>
 <li><p>這樣就會開啟 <code>.vscode</code> 底下的 <code>settings.json</code> 配置檔，接下來在裡面新增以下的設定:</p>
 </li>
@@ -334,7 +333,7 @@
 <blockquote>
 <p>這些設定的作用也一併備註上去了，不過這邊特別要提出的一點是關於 <code>eslint.format.enable</code> 這個設定，設為 <code>true</code> 的情況是我有在 <code>Eslint</code> 的配置檔引用了 <code>eslint-plugin-prettier</code>，若 <code>eslint</code> 配置檔沒有引用，則應該設為 <code>false</code>。</p>
 </blockquote>
-<p>這樣設定完成以上的步驟後，就能在編輯時看到 <code>Eslint</code> 發出錯誤訊息，可能是prettier格式不符，或是語法有問題都會顯示，以及按下存檔後，prettier會自動將正在編輯的檔案做格式化，要做git上傳時會透過husky套件執行eslint跟prettier的檢查，確保上傳前的都沒有任何語法或是格式的錯誤。</p>
+<p>這樣設定完成以上的步驟後，就能在編輯時看到 <code>Eslint</code> 發出錯誤訊息，可能是 <code>prettier</code> 格式不符，或是語法有問題都會顯示，以及按下存檔後，<code>prettier</code> 會自動將正在編輯的檔案做格式化，要做 git 上傳時會透過 <code>husky</code> 套件執行 <code>eslint</code> 跟 <code>prettier</code> 的檢查，確保上傳前的都沒有任何語法或是格式的錯誤。</p>
 
     </div>
 
